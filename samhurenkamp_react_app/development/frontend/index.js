@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Table from "../components/table/table";
+import Table from "../backend/components/table/table";
 import './styles/stylesheet.scss'
 
 
