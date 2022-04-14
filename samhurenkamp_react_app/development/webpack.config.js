@@ -48,7 +48,7 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: path.join(__dirname, 'frontend', 'template.html'),
             filename: "index.html"
-        }),
+        })
         // new bundleAnalyzer()
     ],
 };

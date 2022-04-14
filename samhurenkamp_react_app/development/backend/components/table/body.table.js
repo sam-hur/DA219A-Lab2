@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 
-class TableBody extends Component {
-    render() {
-        return (
-            <tbody>
-                <tr>
-                    <th>
-                        Table Body
-                    </th>
-                </tr>
-            </tbody>
-        )
-    }
-}
+const TableBody = ({ columns, tableData }) => {
+    return (
+        <tbody>
+            {tableData.map((data) => {
+                return (
+                    <tr key={data.id}>
+                        {columns.map(({ key }) => {
+                            return <td key={key}>{data[key] ? data[key] : "——"}</td>;
+                        })}
+                    </tr>
+                );
+            })}
+        </tbody>
+    );
+};
 
 export default TableBody;
