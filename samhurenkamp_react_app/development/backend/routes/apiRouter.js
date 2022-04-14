@@ -27,7 +27,7 @@ ROUTER.get('/course', async (_, res) => {
 })
 
 ROUTER.get('/registration', async (_, res) => {
-    let data = await Registration.find()
+    let data = await Registration.find().sort({ 'registration_date': -1 }).limit(5)
     if (!data) {
         return res.status(400).json(
             { message: `Error: Registration date not found!` }
