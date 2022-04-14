@@ -7,8 +7,8 @@ const Table = ({ data }) => {
 
     const columns = [
         { label: "Student_ID", key: "s_id", sortable: true },
-        { label: "Student name", key: "s_name", sortable: false },
-        { label: "Course name", key: "c_code", sortable: true },
+        { label: "Student name", key: "s_name", sortable: true },
+        { label: "Course name", key: "c_name", sortable: true },
         { label: "Registration date", key: "reg", sortable: true }
     ];
 

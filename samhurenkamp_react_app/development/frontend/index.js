@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Table from "../backend/components/table/table";
+import Table from "./components/table/table";
 import './styles/stylesheet.scss'
 
 var data = new Array();
@@ -22,7 +22,7 @@ async function compileData(students, courses, registrations) {
         rowData.push({
             s_id: student._id,
             s_name: student.full_name,
-            c_code: course.course_code,
+            c_name: course.course_name,
             reg: reg.registration_date
         })
     });
@@ -46,7 +46,7 @@ async function writeData(obj) {
 }
 
 const setCollectionData = (collection) => {
-    fetch(`http://localhost:3000/api/${collection}`, {
+    fetch(`/api/${collection}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
