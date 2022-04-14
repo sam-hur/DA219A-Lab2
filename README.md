@@ -43,7 +43,7 @@ Training in fullstack development using React, AJAX, and Webpack
 	```
 	> manually install dependencies
 	```
-		npm i -D @babel/core, @babel/plugin-transform-runtime @babel/preset-env @babel/preset-react babel-loader css-loader html-webpack-plugin sass sass-loader style-loader webpack webpack-bundle-analyzer webpack-cli webpack-dev-server
+		npm i -D @babel/core @babel/plugin-transform-runtime @babel/preset-env @babel/preset-react babel-loader css-loader html-webpack-plugin sass sass-loader style-loader webpack webpack-bundle-analyzer webpack-cli webpack-dev-server
 	```
 	```
 		npm i -S dotenv express mongoose concurrently react react-dom
@@ -55,26 +55,26 @@ Training in fullstack development using React, AJAX, and Webpack
 * Step 2: Download the appropriate NPM modules according to the package.json file
 * Step 3: (Optional) Download nodemon globally using npm.
 * Step 4:
-			Run in CLI:
+			* Build production code via CLI:
 			```
 				npm run build
 			```
-			Then run:
-			> express server only!
+			* Then run:
+			* > express server only!
 			```
 				npm run server
 			```
-			> webpack server only! (development)
+			* > webpack server only! (development)
 			```
 				npm run start
 			```
-			> run express and webpack concurrently
+			* > run express and webpack concurrently
 			```
 				npm run concurrent
 			```
 			
 			
-* Step 4: The app should now run. Tested on Chrome and Microsoft Edge.
+* Step 4: The app should now run.
 * Step 5: If the app did not open automatically, then navigate manually to the following address:
 			```
 				http://localhost:3000
