@@ -55,23 +55,23 @@ Training in fullstack development using React, AJAX, and Webpack
 * Step 2: Download the appropriate NPM modules according to the package.json file
 * Step 3: (Optional) Download nodemon globally using npm.
 * Step 4:
-			* Build production code via CLI:
-			```
-				npm run build
-			```
-			* Then run:
-			* > express server only!
-			```
-				npm run server
-			```
-			* > webpack server only! (development)
-			```
-				npm run start
-			```
-			* > run express and webpack concurrently
-			```
-				npm run concurrent
-			```
+	* Build production code via CLI:
+	```
+		npm run build
+	```
+	* Then run:
+		* express server only!
+		```
+			npm run server
+		```
+		* webpack server only! (development)
+		```
+			npm run start
+		```
+		* run express and webpack concurrently
+		```
+			npm run concurrent
+		```
 			
 			
 * Step 4: The app should now run.
